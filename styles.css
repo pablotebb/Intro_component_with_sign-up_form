@@ -1,3 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+.attribution {
+  margin: 80px 0 60px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.main-container {
+  width: 340px;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: hsl(0deg, 100%, 74%);
+  background-image: url("../images/bg-intro-mobile.png");
+  color: rgb(255, 255, 255);
+  padding: 80px 38px 60px;
+}
+
+.section-presentation {
+  text-align: center;
+}
+.section-presentation__title {
+  font-size: 1.3em;
+  margin: -11px auto 25px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.section-presentation__description {
+  font-size: 0.85em;
+  margin-bottom: 48px;
+}
+
+.section-ad-form__button {
+  width: 100%;
+  height: 70px;
+  background-color: hsl(248deg, 32%, 49%);
+  border-radius: 6px;
+  font-size: 0.9em;
+  padding: 10px 30px;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 0 hsla(248deg, 32%, 49%, 0.5);
+}
+.section-ad-form__button span {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.section-ad-form form {
+  background-color: rgba(255, 255, 255, 0.689);
+  border-radius: 8px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px 15px;
+}
+.section-ad-form form input {
+  width: 97%;
+  height: 40px;
+  padding-left: 10px;
+  margin: 5px;
+  border: none;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  outline: none;
+}
+.section-ad-form form input::placeholder {
+  background-color: rgba(255, 255, 255, 0.689);
+  font-size: 0.8em;
+  color: #000;
+  font-weight: 600;
+}
+.section-ad-form form input[type=submit] {
+  width: 97%;
+  height: 40px;
+  background-color: #37ca89;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 0 hsla(154deg, 59%, 51%, 0.625);
+}
+.section-ad-form form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: hsla(154deg, 59%, 51%, 0.481);
+}
+.section-ad-form form p {
+  font-size: 0.65em;
+  color: hsl(246deg, 25%, 77%);
+  text-align: center;
+}
+.section-ad-form form p span {
+  font-size: 1em;
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 700;
+}
+.section-ad-form form .error-input {
+  position: relative;
+}
+.section-ad-form form .error-input img {
+  width: 22px;
+  position: absolute;
+  top: -35px;
+  right: 20px;
+}
+.section-ad-form form .error-input p {
+  color: hsl(0deg, 100%, 74%);
+  text-align: right;
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    background-image: url("../images/bg-intro-desktop.png");
+    margin: 100px auto 100px;
+    padding: 100px 163px 105px 167px;
+    width: 1339px;
+    height: 659px;
+    display: flex;
+  }
+  .section-presentation {
+    flex-basis: 55%;
+    margin-top: 159px;
+  }
+  .section-presentation__title {
+    margin-left: 0;
+    width: 291px;
+    font-size: 1.7em;
+    line-height: 34px;
+    text-align: left;
+  }
+  .section-presentation__description {
+    text-align: left;
+    width: 430px;
+  }
+  .section-ad-form {
+    flex-basis: 45%;
+  }
+  .section-ad-form__button {
+    height: 40px;
+    margin-bottom: 18px;
+  }
+  .section-ad-form form {
+    padding-top: 30px;
+    height: 400px;
+  }
+  .section-ad-form form input {
+    margin-bottom: 17px;
+  }
+  .section-ad-form form input[type=submit] {
+    box-shadow: 0 4px 0 hsla(154deg, 59%, 51%, 0.625);
+  }
+  .section-ad-form form .error-input img {
+    top: -32px;
+    right: 30px;
+  }
+  .section-ad-form form .error-input p {
+    margin-top: -15px;
+    text-align: right;
+    margin-right: 8px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -16,41 +16,61 @@
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
-    <section class="section-presentation">
-      <h1 class="section-presentation__title">
-        Learn to code by watching others
-      </h1>
-      <p class="section-presentation__description">
-        See how experienced developers solve problems in real-time. Watching
-        scripted tutorials is great, but understanding how developers think is
-        invaluable.
-      </p>
-    </section>
-    <section class="section-ad">
-      <div class="section-ad__button">
-        Try it free 7 days then $20/mo. thereafter
-      </div>
-    </section>
-    <section class="section-form">
-      <form action="#">
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="email" placeholder="Email Address" />
-        <input type="password" placeholder="Password" />
-        <input type="submit" value="Claim your free trial" />
-        <p>
-          By clicking the button, you are agreeing to our
-          <span>Terms and Services</span>
+    <!-- MAIN CONTAINER -->
+    <main class="main-container">
+      <!-- SECTION PRESENTATION -->
+      <section class="section-presentation">
+        <h1 class="section-presentation__title">
+          Learn to code by watching others
+        </h1>
+        <p class="section-presentation__description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
         </p>
-      </form>
-    </section>
+      </section>
+      <!-- SECTION AD FORM-->
+      <section class="section-ad-form">
+        <div class="section-ad-form__button">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+        <form action="#">
+          <input type="text" placeholder="First Name" />
+          <!-- <div class="error-input">
+            <img src="./images/icon-error.svg" alt="error icon" />
+            <p>First name cannot be empty</p>
+          </div> -->
+          <input type="text" placeholder="Last Name" />
+          <!-- <div class="error-input">
+            <img src="./images/icon-error.svg" alt="error icon" />
+            <p>Last name cannot be empty</p>
+          </div> -->
+          <input type="email" placeholder="Email Address" />
+          <!-- <div class="error-input">
+            <img src="./images/icon-error.svg" alt="error icon" />
+            <p>Looks like this is not an email</p>
+          </div> -->
+          <input type="password" placeholder="Password" />
+          <!-- <div class="error-input">
+            <img src="./images/icon-error.svg" alt="error icon" />
+            <p>Password cannot be empty</p>
+          </div> -->
+          <input type="submit" value="Claim your free trial" />
+          <p>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </section>
+    </main>
 
+    <!-- FOOTER -->
     <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#" target="_blank">Pablo Belda</a>.
       </p>
     </footer>
   </body>
