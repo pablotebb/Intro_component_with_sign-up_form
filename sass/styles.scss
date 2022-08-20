@@ -7,8 +7,6 @@
   width: 340px;
   height: 1000px;
   margin: 0 auto;
-  background-color: variables.$Red;
-  background-image: url("../images/bg-intro-mobile.png");
   color: variables.$White;
   padding: 80px 38px 60px;
 }
@@ -110,9 +108,12 @@
 }
 
 @media (min-width: 1440px) {
+  body {
+    // background-color: variables.$Red;
+    background-image: url("../images/bg-intro-desktop.png");
+  }
   .main-container {
     // border: 1px solid red;
-    background-image: url("../images/bg-intro-desktop.png");
     margin: 100px auto 100px;
     padding: 100px 163px 105px 167px;
     width: 1339px;
