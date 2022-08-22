@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-color: hsl(0deg, 100%, 74%);
-  background-image: url("../images/bg-intro-mobile.png");
+  background-image: url("images/bg-intro-mobile.png");
 }
 
 .attribution {
@@ -33,12 +34,14 @@ body {
 .section-presentation {
   text-align: center;
 }
+
 .section-presentation__title {
   font-size: 1.3em;
   margin: -11px auto 25px;
   line-height: 25px;
   font-weight: 700;
 }
+
 .section-presentation__description {
   font-size: 0.85em;
   margin-bottom: 48px;
@@ -55,16 +58,19 @@ body {
   margin-bottom: 25px;
   box-shadow: 0 5px 0 hsla(248deg, 32%, 49%, 0.5);
 }
+
 .section-ad-form__button span {
   color: rgb(255, 255, 255);
   font-weight: 700;
 }
+
 .section-ad-form form {
   background-color: rgba(255, 255, 255, 0.689);
   border-radius: 8px;
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
   padding: 10px 15px;
 }
+
 .section-ad-form form input {
   width: 97%;
   height: 40px;
@@ -75,12 +81,14 @@ body {
   border-radius: 5px;
   outline: none;
 }
+
 .section-ad-form form input::placeholder {
   background-color: rgba(255, 255, 255, 0.689);
   font-size: 0.8em;
   color: #000;
   font-weight: 600;
 }
+
 .section-ad-form form input[type=submit] {
   width: 97%;
   height: 40px;
@@ -93,29 +101,35 @@ body {
   margin-bottom: 15px;
   box-shadow: 0 4px 0 hsla(154deg, 59%, 51%, 0.625);
 }
+
 .section-ad-form form input[type=submit]:hover {
   cursor: pointer;
   background-color: hsla(154deg, 59%, 51%, 0.481);
 }
+
 .section-ad-form form p {
   font-size: 0.65em;
   color: hsl(246deg, 25%, 77%);
   text-align: center;
 }
+
 .section-ad-form form p span {
   font-size: 1em;
   color: hsl(0deg, 100%, 74%);
   font-weight: 700;
 }
+
 .section-ad-form form .error-input {
   position: relative;
 }
+
 .section-ad-form form .error-input img {
   width: 22px;
   position: absolute;
   top: -35px;
   right: 20px;
 }
+
 .section-ad-form form .error-input p {
   color: hsl(0deg, 100%, 74%);
   font-style: italic;
@@ -124,8 +138,9 @@ body {
 
 @media (min-width: 1440px) {
   body {
-    background-image: url("../images/bg-intro-desktop.png");
+    background-image: url("images/bg-intro-desktop.png");
   }
+
   .main-container {
     margin: 100px auto 100px;
     padding: 100px 163px 105px 167px;
@@ -133,10 +148,12 @@ body {
     height: 659px;
     display: flex;
   }
+
   .section-presentation {
     flex-basis: 55%;
     margin-top: 159px;
   }
+
   .section-presentation__title {
     margin-left: 0;
     width: 291px;
@@ -144,31 +161,39 @@ body {
     line-height: 34px;
     text-align: left;
   }
+
   .section-presentation__description {
     text-align: left;
     width: 430px;
   }
+
   .section-ad-form {
     flex-basis: 45%;
   }
+
   .section-ad-form__button {
     height: 40px;
     margin-bottom: 18px;
   }
+
   .section-ad-form form {
     padding-top: 30px;
     height: 400px;
   }
+
   .section-ad-form form input {
     margin-bottom: 17px;
   }
+
   .section-ad-form form input[type=submit] {
     box-shadow: 0 4px 0 hsla(154deg, 59%, 51%, 0.625);
   }
+
   .section-ad-form form .error-input img {
     top: -32px;
     right: 30px;
   }
+
   .section-ad-form form .error-input p {
     margin-top: -15px;
     text-align: right;
