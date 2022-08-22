@@ -10,7 +10,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Frontend Mentor | Intro component with sign up form</title>
@@ -31,31 +31,57 @@
       </section>
       <!-- SECTION AD FORM-->
       <section class="section-ad-form">
+        <!-- AD -->
         <div class="section-ad-form__button">
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </div>
+        <!-- FORM -->
         <form action="#">
-          <input type="text" placeholder="First Name" />
+          <!-- input 1 -->
+          <input
+            id="first-name"
+            type="text"
+            value=""
+            placeholder="First Name"
+          />
+          <!-- error 1 -->
+          <div id="error-1" class="error-input"></div>
           <!-- <div class="error-input">
             <img src="./images/icon-error.svg" alt="error icon" />
             <p>First name cannot be empty</p>
           </div> -->
-          <input type="text" placeholder="Last Name" />
+          <!-- input 2 -->
+          <input id="last-name" type="text" value="" placeholder="Last Name" />
+          <!-- error 2 -->
+          <div id="error-2" class="error-input"></div>
           <!-- <div class="error-input">
             <img src="./images/icon-error.svg" alt="error icon" />
             <p>Last name cannot be empty</p>
           </div> -->
-          <input type="email" placeholder="Email Address" />
+          <!-- input 3 -->
+          <input id="email" type="email" value="" placeholder="Email Address" />
+          <!-- error 3 -->
+          <div id="error-3" class="error-input"></div>
           <!-- <div class="error-input">
             <img src="./images/icon-error.svg" alt="error icon" />
             <p>Looks like this is not an email</p>
           </div> -->
-          <input type="password" placeholder="Password" />
+          <!-- input 4 -->
+          <input
+            id="password"
+            type="password"
+            value=""
+            placeholder="Password"
+          />
+          <!-- error 4 -->
+          <div id="error-4" class="error-input"></div>
+          <div id="error-5" class="error-input"></div>
           <!-- <div class="error-input">
             <img src="./images/icon-error.svg" alt="error icon" />
             <p>Password cannot be empty</p>
           </div> -->
-          <input type="submit" value="Claim your free trial" />
+          <!-- input -->
+          <input id="submit" type="submit" value="Claim your free trial" />
           <p>
             By clicking the button, you are agreeing to our
             <span>Terms and Services</span>
@@ -73,5 +99,7 @@
         >. Coded by <a href="#" target="_blank">Pablo Belda</a>.
       </p>
     </footer>
+    <!-- JAVASCRIPT -->
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -118,6 +118,7 @@ body {
 }
 .section-ad-form form .error-input p {
   color: hsl(0deg, 100%, 74%);
+  font-style: italic;
   text-align: right;
 }
 
